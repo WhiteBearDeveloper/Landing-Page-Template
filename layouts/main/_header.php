@@ -11,7 +11,7 @@
     <meta name="description" content="Описание">
     <link rel="stylesheet" href="./dist/css/core.css">
     <link rel="stylesheet" href="./dist/css/layout.css?v=<?=time();?>">
-	<? require_once($_SERVER['DOCUMENT_ROOT'] . "/include/classes/init.php");?>
+	<? require_once($_SERVER['DOCUMENT_ROOT'] . "/include/scripts/init.php");?>
 </head>
 <body>
 <div class="wrapper">
