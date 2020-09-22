@@ -1,0 +1,7 @@
+@mixin transition($transitions...){
+	$transition_result: ();
+	@each $transition in $transitions {
+		$transition_result: append($transition_result, $transition $transition_opt, comma);
+	}
+	transition: $transition_result;
+}

@@ -9,7 +9,7 @@ Class IncludeElements{
     private static $scripts = array();
     private static $libs = array();
 
-    private function canAddElement($element, $type){
+    private static function canAddElement($element, $type){
         if(!$type){
             return false;
         }

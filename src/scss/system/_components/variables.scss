@@ -1,0 +1,19 @@
+//sizes
+$grid-breakpoints: (map-merge($grid-breakpoints, (
+	xxl: 1920px,
+)));
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1126px
+);
+
+$transition_opt: .2s linear;
+
+//fonts
+
+//$font-normal: "Manrope-Medium", Arial, sans-serif;
+//$font-semibold: "Manrope-SemiBold", Arial, sans-serif;
+//$font-bold: "Manrope-Bold", Arial, sans-serif;

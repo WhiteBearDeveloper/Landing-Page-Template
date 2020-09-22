@@ -1,0 +1,91 @@
+body{
+	min-height: 100%;
+	height: auto;
+	//font-family: $font-normal;
+	background: $white;
+	color: $black;
+}
+.main{
+	flex: 1 0 auto;
+}
+.wrapper{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.bold{
+	//font-family: $font-semibold;
+	font-weight: bold;
+}
+
+.image{
+	line-height: 0;
+	font-size: 0;
+	& img{
+		max-width: 100%;
+		max-height: 100%;
+		width: auto;
+		height: auto;
+		border: 0;
+	}
+}
+//.h2{
+//	font-family: $font-bold;
+//	line-height: 1.2;
+//	font-size: 18px;
+//	margin-bottom: 7px;
+//
+//	@include media-breakpoint-up(md){
+//		font-size: 34px;
+//		margin-bottom: 14px;
+//	}
+//}
+//.h3{
+//	font-size: 16px;
+//	font-family: $font-bold;
+//	margin-bottom: 13px;
+//
+//	@include media-breakpoint-up(md){
+//		font-size: 18px;
+//	}
+//}
+.svg-sprite{
+	display: none;
+}
+//.button{
+//	display: inline-block;
+//	-webkit-border-radius: 30px;
+//	-moz-border-radius: 30px;
+//	border-radius: 30px;
+//	cursor: pointer;
+//	font-size: 16px;
+//	font-family: $font-semibold;
+//	line-height: 25px;
+//	text-align: center;
+//	text-decoration: none;
+//	padding-top: 7px;
+//	padding-bottom: 9px;
+//	transition: $transition_opt;
+//}
+//.button__blue{
+//	background: $blue;
+//	color: $white;
+//
+//	&:hover{
+//		background: darken($blue, 30%);
+//	}
+//}
+//.button__white{
+//	border: 1px solid;
+//	background: $white;
+//	color: $blue;
+//	border-color: transparent;
+//
+//	&:hover{
+//		background: transparent;
+//		border-color: $white;
+//		color: $white;
+//	}
+//}

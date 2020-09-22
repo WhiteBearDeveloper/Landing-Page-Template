@@ -1,0 +1,27 @@
+@import "./dev/include_system";
+
+.social-list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.social-item{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0;
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.social-icon{
+	transition: fill .2s linear;
+}
+.social-icon__white{
+	fill: $white;
+	@include transition(fill);
+}
+.social-item:hover .social-icon__white{
+	fill: darken($white, 10%);
+}

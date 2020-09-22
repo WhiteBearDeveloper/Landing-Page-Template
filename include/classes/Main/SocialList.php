@@ -21,7 +21,7 @@ class SocialList
         $this->list = $list;
         $this->theme = $theme;
         $this->attributes = $additionalAttributes;
-        self::showTemplate();
+        $this->showTemplate();
     }
 
     private function getList()
