@@ -64,3 +64,18 @@ function deepEqualObjects(a, b) {
 	}
 	return propertiesInA == propertiesInB;
 }
+function copyText(el) {
+	copyContent(el.text());
+}
+
+function copyVal(el) {
+	copyContent(el.val());
+}
+
+function copyContent(el){
+	var $tmp = $("<textarea>");
+	$("body").append($tmp);
+	$tmp.val(el).select();
+	document.execCommand("copy");
+	$tmp.remove();
+}

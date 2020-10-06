@@ -123,45 +123,38 @@
 		font-size: 15px;
 		line-height: 1.2;
 
-		a{
-			color: $white;
+		&:before {
+			$size: 16px;
 
-			&:hover{
-				text-decoration: none;
-			}
+			content: '';
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: block;
+			flex-shrink: 0;
+			width: $size;
+			height: $size;
+			border: 1px solid;
+			margin-right: 11px;
+		}
+		&:after {
+			opacity: 0;
+			pointer-events: none;
+			z-index: -1;
+			$margin_size: 4px;
+			$size: 8px;
+
+			content: '';
+			display: block;
+			position: absolute;
+			top: $margin_size;
+			left: $margin_size;
+			width: $size;
+			height: $size;
+			@include transition(opacity, z-index);
 		}
 	}
-	&__checkbox:before {
-		$size: 16px;
-
-		content: '';
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		display: block;
-		flex-shrink: 0;
-		width: $size;
-		height: $size;
-		border: 1px solid;
-		margin-right: 11px;
-	}
-	&__checkbox:after {
-		opacity: 0;
-		pointer-events: none;
-		z-index: -1;
-		$margin_size: 4px;
-		$size: 8px;
-
-		content: '';
-		display: block;
-		position: absolute;
-		top: $margin_size;
-		left: $margin_size;
-		width: $size;
-		height: $size;
-		@include transition(opacity, z-index);
-	}
-	&__checkbox:checked + &__checkbox:after {
+	&__checkbox:checked + &__labeltext:after {
 		opacity: 1;
 		z-index: 10;
 	}
