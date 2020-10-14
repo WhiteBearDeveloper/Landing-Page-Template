@@ -5,6 +5,9 @@ $(function(){
 			return (cls.match(new RegExp('\\b' + re + '', 'g')) || []).join(' ');
 		});
 	};
+	$.fn.hasAttr = function(name) {
+		return this.attr(name) !== undefined;
+	};
 });
 
 function declension(number, variants) {
@@ -78,4 +81,18 @@ function copyContent(el){
 	$tmp.val(el).select();
 	document.execCommand("copy");
 	$tmp.remove();
+}
+
+function checkScreenSize(){
+	if(document.body.clientWidth <= 576){
+		return 'xs';
+	} else if(document.body.clientWidth > 576 && document.body.clientWidth <= 768){
+		return 'sm';
+	} else if(document.body.clientWidth > 768 && document.body.clientWidth <= 992){
+		return 'md';
+	} else if(document.body.clientWidth > 992 && document.body.clientWidth <= 1200){
+		return 'lg';
+	} else if(document.body.clientWidth > 1200){
+		return 'xl';
+	}
 }
