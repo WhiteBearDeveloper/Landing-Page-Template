@@ -29,11 +29,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-input
-{
-	padding: 0px;
-	margin: 0px;
-}
+
 input::-ms-clear {
 	display: none;
 }
@@ -41,37 +37,6 @@ input, select, textarea, a
 {
 	outline:none;
 	border: none;
-}
-*::-webkit-input-placeholder
-{
-	color: #666;
-	opacity: 1;
-}
-*:-moz-placeholder
-{
-	color: #666;
-	opacity: 1;
-}
-*::-moz-placeholder
-{
-	color: #666;
-	opacity: 1;
-}
-*:-ms-input-placeholder
-{
-	color: #666;
-	opacity: 1;
-}
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-{
-
-}
-body input:required:valid,
-body textarea:required:valid
-{
-
 }
 nav{
 	width: 100%;
